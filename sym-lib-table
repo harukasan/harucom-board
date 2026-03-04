@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Harucom_Board")(type "KiCad")(uri "${KIPRJMOD}/lib/Harucom_Board.kicad_sym")(options "")(descr ""))
+  (lib (name "MCU_RaspberryPi_RP2350")(type "KiCad")(uri "${KIPRJMOD}/lib/RP-006440-DD-2-RP2350A Minimal Board Kicad/MCU_RaspberryPi_RP2350.kicad_sym")(options "")(descr ""))
+)

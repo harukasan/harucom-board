@@ -1,0 +1,688 @@
+(footprint "RaspberryPi_Pico_Debug_Probe"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Raspberry Pi Pico (wireless & original) common through-hole footprint, default socket model has height of 8.51mm, https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf")
+	(tags "Raspberry Pi Pico module usb pcb antenna handsolder")
+	(property "Reference" "REF**"
+		(at -6.096 -7.62 90)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "ea31613f-a0a2-4f5a-9373-bee042a054d1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left)
+		)
+	)
+	(property "Value" "RaspberryPi_Pico_Debug_Probe"
+		(at 0 27.94 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "0d39661e-f40b-4a60-8ec8-51a5d8c091da")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "66ee3096-7735-48dd-9bfa-1b5fdf8953f3")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6a738590-4bb1-4f23-8f55-5d2a47ab2aad")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -10.22 -17.78)
+		(end -10.22 -7.56)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c8d4a2a6-64d9-42ba-ac5c-ce3e84be4b6a")
+	)
+	(fp_line
+		(start -10.22 -17.78)
+		(end -7.56 -17.78)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "90e1e8e6-447f-43b1-b392-deeff7b7655b")
+	)
+	(fp_line
+		(start -10.22 -7.56)
+		(end -7.56 -7.56)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "76408325-33a7-49c6-be80-83231644d1a0")
+	)
+	(fp_line
+		(start -8.89 -20.38)
+		(end -7.56 -20.38)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "aa6b7dc6-8b85-43cb-8085-ed4277c0f8cc")
+	)
+	(fp_line
+		(start -7.56 -20.38)
+		(end -7.56 -19.05)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e3649beb-5c4d-4275-ad01-aa1e77e0e410")
+	)
+	(fp_line
+		(start -7.56 -17.78)
+		(end -7.56 -7.56)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b9900fbc-acda-4360-9a6a-cb9ddb38b0a3")
+	)
+	(fp_line
+		(start 7.56 -22.92)
+		(end 10.22 -22.92)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d3e144d6-de20-4151-9473-b55e5b853946")
+	)
+	(fp_line
+		(start 7.56 -20.32)
+		(end 7.56 -22.92)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ff16ea51-3e72-44f9-b581-a105cef2f51d")
+	)
+	(fp_line
+		(start 7.56 -20.32)
+		(end 10.22 -20.32)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "cf314fad-149b-4d0d-bbee-ed2de1f8ac77")
+	)
+	(fp_line
+		(start 8.89 -17.72)
+		(end 10.22 -17.72)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "df97d061-6afa-47b6-b6e6-481b8ab20883")
+	)
+	(fp_line
+		(start 10.22 -20.32)
+		(end 10.22 -22.92)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "66c33efd-d018-48f7-b92a-7125f8729314")
+	)
+	(fp_line
+		(start 10.22 -17.72)
+		(end 10.22 -19.05)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "092abe1f-21aa-4b72-b082-912a38f38d47")
+	)
+	(fp_line
+		(start -10.69 -20.85)
+		(end -7.14 -20.85)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "1e1362dd-a637-4ff2-879e-d183fabd5597")
+	)
+	(fp_line
+		(start -10.69 -7.3)
+		(end -10.69 -20.85)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "ef9f4296-bfc8-4da5-88e1-e7bfcd61f666")
+	)
+	(fp_line
+		(start -7.14 -20.85)
+		(end -7.14 -7.3)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "0fcc814b-65cc-4247-9e49-bbdf0d68bb5e")
+	)
+	(fp_line
+		(start -7.14 -7.3)
+		(end -10.69 -7.3)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "b2ab62eb-7019-430e-9a4f-7bdb770600f9")
+	)
+	(fp_line
+		(start 7.09 -23.35)
+		(end 7.09 -17.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "8a3ea20f-c01d-4638-b158-61a985872f8c")
+	)
+	(fp_line
+		(start 7.09 -17.25)
+		(end 10.64 -17.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "f9076e6c-1d0c-42a6-9f67-171817bb8d8d")
+	)
+	(fp_line
+		(start 10.64 -23.35)
+		(end 7.09 -23.35)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "dc73ab9e-3314-48cc-aa05-dff26a5df381")
+	)
+	(fp_line
+		(start 10.64 -17.25)
+		(end 10.64 -23.35)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "abf86113-3042-440f-98ad-2b239bc58154")
+	)
+	(fp_line
+		(start -10.5 -24.5)
+		(end -9.5 -25.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "9693a43c-afc7-4180-869f-09f66c9fab40")
+	)
+	(fp_line
+		(start -10.5 25)
+		(end -10.5 -24.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "423483be-e710-44fe-96c1-003b23779177")
+	)
+	(fp_line
+		(start -10.16 -20.32)
+		(end -8.255 -20.32)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "96df334d-1829-4460-b2e1-5eea4bd04398")
+	)
+	(fp_line
+		(start -10.16 -7.62)
+		(end -10.16 -20.32)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "783fa20e-5b52-4b08-8a09-112f7401a0c3")
+	)
+	(fp_line
+		(start -9.5 -25.5)
+		(end 10 -25.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "a4271202-8a06-43e7-b023-c40eecdc5e65")
+	)
+	(fp_line
+		(start -8.255 -20.32)
+		(end -7.62 -19.685)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "55ff3c43-7edc-4052-b041-e59b6a07fb11")
+	)
+	(fp_line
+		(start -7.62 -19.685)
+		(end -7.62 -7.62)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "fdfa8391-684e-4846-ae1c-f133155bd5a7")
+	)
+	(fp_line
+		(start -7.62 -7.62)
+		(end -10.16 -7.62)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "8865ae37-3363-4752-9432-15f17e7a1a37")
+	)
+	(fp_line
+		(start 7.62 -22.86)
+		(end 7.62 -17.78)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "8372e636-76cd-4eb0-95ad-505921568682")
+	)
+	(fp_line
+		(start 7.62 -17.78)
+		(end 9.525 -17.78)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "30ce8847-0d26-42a0-bfbc-031614ee857d")
+	)
+	(fp_line
+		(start 9.525 -17.78)
+		(end 10.16 -18.415)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "0d35b9ac-b81d-47fe-a333-1ae7037186b5")
+	)
+	(fp_line
+		(start 10 25.5)
+		(end -10 25.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "d66ca36f-763b-4b8c-b30d-e6408881f366")
+	)
+	(fp_line
+		(start 10.16 -22.86)
+		(end 7.62 -22.86)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "e8a7f428-2ade-4205-9cf0-8cc54d32e1fb")
+	)
+	(fp_line
+		(start 10.16 -18.415)
+		(end 10.16 -22.86)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "95815e81-487c-42fe-80ea-240d9a3357c5")
+	)
+	(fp_line
+		(start 10.5 -25)
+		(end 10.5 25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "a61c01de-a925-4c22-874c-42a76d628e4a")
+	)
+	(fp_arc
+		(start -10 25.5)
+		(mid -10.353553 25.353553)
+		(end -10.5 25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "d593be61-ed5d-4e96-8297-e037c5e0da63")
+	)
+	(fp_arc
+		(start 10 -25.5)
+		(mid 10.353553 -25.353553)
+		(end 10.5 -25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "4c76cce1-7c7b-4115-b7d8-fb74a9b9b517")
+	)
+	(fp_arc
+		(start 10.5 25)
+		(mid 10.353553 25.353553)
+		(end 10 25.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "85d7402b-eb67-4adc-b53a-275877e6fc80")
+	)
+	(fp_poly
+		(pts
+			(xy 3.79 -21.2) (xy 3.79 -26.2) (xy 4 -26.2) (xy 4 -26.9) (xy -4 -26.9) (xy -4 -26.2) (xy -3.79 -26.2)
+			(xy -3.79 -21.2)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "831a08de-ffd4-4501-8b6f-61a068613bd9")
+	)
+	(fp_text user "USB Cable"
+		(at 0 -37.465 0)
+		(unlocked yes)
+		(layer "Cmts.User")
+		(uuid "6ff696b0-1cbf-4ddf-82c3-665011a30434")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at -8.89 -13.97 90)
+		(layer "F.Fab")
+		(uuid "c151d54f-dfd0-4332-8abd-a39a39bcd70c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 8.89 -21.59)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "fd95b85c-93c8-46a1-8ac6-0965cb53b9c6")
+	)
+	(pad "2" thru_hole rect
+		(at -8.89 -19.05)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "0264738d-e816-4da3-a288-4d65d5dbd639")
+	)
+	(pad "2" thru_hole rect
+		(at 8.89 -19.05)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "8faf21b7-2827-4b87-962b-6da17b79d788")
+	)
+	(pad "3" thru_hole circle
+		(at -8.89 -16.51)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "f77ed0cc-524d-45e5-b366-f29132f2cb69")
+	)
+	(pad "4" thru_hole circle
+		(at -8.89 -13.97)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "60ca8016-4941-48f2-b673-b5e7278164e9")
+	)
+	(pad "5" thru_hole circle
+		(at -8.89 -11.43)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "4a481ec4-ba05-4038-9f1e-52ab56f7cb54")
+	)
+	(pad "6" thru_hole circle
+		(at -8.89 -8.89)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "17c1a839-e757-4fd3-945e-08b27e680836")
+	)
+	(zone
+		(net 0)
+		(net_name "")
+		(layer "F.CrtYd")
+		(uuid "59b87f8a-0978-48e6-a101-134595838ecf")
+		(name "USB Cable")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.254)
+		(filled_areas_thickness no)
+		(keepout
+			(tracks allowed)
+			(vias allowed)
+			(pads allowed)
+			(copperpour allowed)
+			(footprints allowed)
+		)
+		(placement
+			(enabled no)
+			(sheetname "")
+		)
+		(fill
+			(thermal_gap 0.508)
+			(thermal_bridge_width 0.508)
+		)
+		(polygon
+			(pts
+				(xy -5.75 -27.7) (xy -3.94 -27.7) (xy -3.94 -27.4) (xy 3.94 -27.4) (xy 3.94 -27.7) (xy 5.75 -27.7)
+				(xy 5.75 -47.2) (xy -5.75 -47.2)
+			)
+		)
+	)
+	(group ""
+		(uuid "c642d6d9-15e8-4fbc-a391-b92480e5bd08")
+		(members "092abe1f-21aa-4b72-b082-912a38f38d47" "0d35b9ac-b81d-47fe-a333-1ae7037186b5"
+			"30ce8847-0d26-42a0-bfbc-031614ee857d" "66c33efd-d018-48f7-b92a-7125f8729314"
+			"8372e636-76cd-4eb0-95ad-505921568682" "8a3ea20f-c01d-4638-b158-61a985872f8c"
+			"8faf21b7-2827-4b87-962b-6da17b79d788" "95815e81-487c-42fe-80ea-240d9a3357c5"
+			"abf86113-3042-440f-98ad-2b239bc58154" "cf314fad-149b-4d0d-bbee-ed2de1f8ac77"
+			"d3e144d6-de20-4151-9473-b55e5b853946" "dc73ab9e-3314-48cc-aa05-dff26a5df381"
+			"df97d061-6afa-47b6-b6e6-481b8ab20883" "e8a7f428-2ade-4205-9cf0-8cc54d32e1fb"
+			"f9076e6c-1d0c-42a6-9f67-171817bb8d8d" "fd95b85c-93c8-46a1-8ac6-0965cb53b9c6"
+			"ff16ea51-3e72-44f9-b581-a105cef2f51d"
+		)
+	)
+	(embedded_fonts no)
+	(model "../Module_RaspberryPi_Pico.3dshapes/DIP-40_W17.78mm_H8.51mm_Socket.wrl"
+		(hide yes)
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+	(model "../Module_RaspberryPi_Pico.3dshapes/RaspberryPi_Pico_AddedHeaders.wrl"
+		(hide yes)
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+	(model "../Module_RaspberryPi_Pico.3dshapes/RaspberryPi_Pico_AddedHeaders_Socketed.wrl"
+		(hide yes)
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+	(model "../Module_RaspberryPi_Pico.3dshapes/RaspberryPi_Pico_H.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+	(model "../Module_RaspberryPi_Pico.3dshapes/RaspberryPi_Pico_H_Socketed.wrl"
+		(hide yes)
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+	(model "../Module_RaspberryPi_Pico.3dshapes/RaspberryPi_Pico_W_AddedHeaders.wrl"
+		(hide yes)
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+	(model "../Module_RaspberryPi_Pico.3dshapes/RaspberryPi_Pico_W_AddedHeaders_Socketed.wrl"
+		(hide yes)
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+	(model "../Module_RaspberryPi_Pico.3dshapes/RaspberryPi_Pico_WH.wrl"
+		(hide yes)
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+	(model "../Module_RaspberryPi_Pico.3dshapes/RaspberryPi_Pico_WH_Socketed.wrl"
+		(hide yes)
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
