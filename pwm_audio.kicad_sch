@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Harucom-board")
-		(date "2026-03-22")
-		(rev "2")
+		(date "2026-03-23")
+		(rev "2B")
 		(comment 1 "https://github.com/harukasan/harucom-board/")
 		(comment 2 "SPDX-License-Identifier: CERN-OHL-P-2.0")
 		(comment 3 "© 2026 Shunsuke Michii")
@@ -2281,7 +2281,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4e3b2443-18fb-42df-b3ae-e034b2b540f1")
-		(property "Reference" "C25"
+		(property "Reference" "C26"
 			(at 107.95 106.6799 0)
 			(effects
 				(font
@@ -2344,7 +2344,7 @@
 		(instances
 			(project ""
 				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b/d71bb1da-6431-4b72-87ca-46892dee63ab"
-					(reference "C25")
+					(reference "C26")
 					(unit 1)
 				)
 			)
@@ -2360,7 +2360,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5f93dc12-e152-466a-88f9-b9381c96b22b")
-		(property "Reference" "C26"
+		(property "Reference" "C27"
 			(at 123.571 66.04 90)
 			(effects
 				(font
@@ -2421,7 +2421,7 @@
 		(instances
 			(project ""
 				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b/d71bb1da-6431-4b72-87ca-46892dee63ab"
-					(reference "C26")
+					(reference "C27")
 					(unit 1)
 				)
 			)
@@ -2744,7 +2744,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "86133c41-42e2-458c-9021-d00ca0633440")
-		(property "Reference" "C27"
+		(property "Reference" "C28"
 			(at 123.571 93.98 90)
 			(effects
 				(font
@@ -2805,7 +2805,7 @@
 		(instances
 			(project ""
 				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b/d71bb1da-6431-4b72-87ca-46892dee63ab"
-					(reference "C27")
+					(reference "C28")
 					(unit 1)
 				)
 			)
@@ -3312,7 +3312,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f2b79dd4-ea2c-464a-b78d-567402ac610f")
-		(property "Reference" "C24"
+		(property "Reference" "C25"
 			(at 107.95 78.7399 0)
 			(effects
 				(font
@@ -3375,7 +3375,7 @@
 		(instances
 			(project ""
 				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b/d71bb1da-6431-4b72-87ca-46892dee63ab"
-					(reference "C24")
+					(reference "C25")
 					(unit 1)
 				)
 			)

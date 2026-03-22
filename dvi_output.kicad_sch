@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Harucom-board")
-		(date "2026-03-22")
-		(rev "2")
+		(date "2026-03-23")
+		(rev "2B")
 		(comment 1 "https://github.com/harukasan/harucom-board/")
 		(comment 2 "SPDX-License-Identifier: CERN-OHL-P-2.0")
 		(comment 3 "© 2026 Shunsuke Michii")
@@ -2110,7 +2110,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "126cda8f-7655-403c-b1f6-2ade55f3e83c")
-		(property "Reference" "C23"
+		(property "Reference" "C24"
 			(at 187.96 66.0399 0)
 			(effects
 				(font
@@ -2173,7 +2173,7 @@
 		(instances
 			(project ""
 				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b/6dc8339e-6590-4b41-b33d-c0ae4a02af98"
-					(reference "C23")
+					(reference "C24")
 					(unit 1)
 				)
 			)
