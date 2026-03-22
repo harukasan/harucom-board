@@ -6,30 +6,34 @@
 	(paper "A4")
 	(title_block
 		(title "Harucom-board")
-		(date "2026-03-04")
-		(rev "260304")
+		(date "2026-03-22")
+		(rev "2")
 		(comment 1 "https://github.com/harukasan/harucom-board/")
 		(comment 2 "SPDX-License-Identifier: CERN-OHL-P-2.0")
 		(comment 3 "© 2026 Shunsuke Michii")
 	)
 	(lib_symbols
-		(symbol "Mechanical:MountingHole"
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 1.016)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom no)
 			(on_board yes)
 			(property "Reference" "H"
-				(at 0 5.08 0)
+				(at 0 6.35 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "MountingHole"
-				(at 0 3.175 0)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -54,7 +58,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Mounting Hole without connection"
+			(property "Description" "Mounting Hole with connection"
 				(at 0 0 0)
 				(effects
 					(font
@@ -72,7 +76,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "MountingHole*"
+			(property "ki_fp_filters" "MountingHole*Pad*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -81,9 +85,9 @@
 					(hide yes)
 				)
 			)
-			(symbol "MountingHole_0_1"
+			(symbol "MountingHole_Pad_0_1"
 				(circle
-					(center 0 0)
+					(center 0 1.27)
 					(radius 1.27)
 					(stroke
 						(width 1.27)
@@ -91,6 +95,127 @@
 					)
 					(fill
 						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:GND"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
 					)
 				)
 			)
@@ -107,9 +232,23 @@
 		)
 		(uuid "7e80d3a0-1875-4d9b-b38a-0c70eea6920a")
 	)
-	(no_connect
-		(at 71.12 77.47)
-		(uuid "f8767dd3-9056-4208-842d-a55101230feb")
+	(junction
+		(at 240.03 143.51)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "086f26db-1a21-4120-a48f-0085f9cf41b5")
+	)
+	(junction
+		(at 240.03 133.35)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "598cafba-904c-44d9-8ef3-84fb36d3cc0a")
+	)
+	(junction
+		(at 240.03 123.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e2de38cc-9a8c-473d-b210-7890ded7d200")
 	)
 	(wire
 		(pts
@@ -120,6 +259,16 @@
 			(type default)
 		)
 		(uuid "0f9ef41a-6ed1-4dcb-beda-c7dcc2ca32ec")
+	)
+	(wire
+		(pts
+			(xy 78.74 66.04) (xy 93.98 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10618ed9-ded3-47bd-9ae6-1368b1b6eedc")
 	)
 	(wire
 		(pts
@@ -143,6 +292,16 @@
 	)
 	(wire
 		(pts
+			(xy 240.03 143.51) (xy 240.03 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a816e5e-8958-4e9c-bb81-c6dfe404357b")
+	)
+	(wire
+		(pts
 			(xy 177.8 107.95) (xy 193.04 107.95)
 		)
 		(stroke
@@ -153,13 +312,13 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 115.57) (xy 193.04 115.57)
+			(xy 177.8 113.03) (xy 193.04 113.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "20ed246e-2b18-4f95-a362-7be654db5ecc")
+		(uuid "29c81473-f4bd-4707-8368-6c5f76b1baa6")
 	)
 	(wire
 		(pts
@@ -173,7 +332,17 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 63.5) (xy 93.98 63.5)
+			(xy 240.03 133.35) (xy 240.03 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d11cd2c-9ccf-40bb-b05a-0f01235bcab9")
+	)
+	(wire
+		(pts
+			(xy 78.74 63.5) (xy 91.44 63.5)
 		)
 		(stroke
 			(width 0)
@@ -263,16 +432,6 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 113.03) (xy 193.04 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "51ec4bcb-eada-467f-aff8-827f879032d3")
-	)
-	(wire
-		(pts
 			(xy 88.9 132.08) (xy 88.9 149.86)
 		)
 		(stroke
@@ -343,6 +502,16 @@
 	)
 	(wire
 		(pts
+			(xy 93.98 58.42) (xy 93.98 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7754e9f2-8fb0-4d7e-8610-2628e7b84d04")
+	)
+	(wire
+		(pts
 			(xy 177.8 135.89) (xy 193.04 135.89)
 		)
 		(stroke
@@ -360,6 +529,16 @@
 			(type default)
 		)
 		(uuid "86939b33-a988-4d71-b049-38babf62d0e9")
+	)
+	(wire
+		(pts
+			(xy 240.03 123.19) (xy 233.68 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f6f0c01-8d07-45a4-b3c6-5c67ec4f55b7")
 	)
 	(wire
 		(pts
@@ -390,6 +569,26 @@
 			(type default)
 		)
 		(uuid "9aaa7443-d1dc-4400-86a7-b329fb5a31d6")
+	)
+	(wire
+		(pts
+			(xy 233.68 113.03) (xy 240.03 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9bd57f47-0ae2-4c0d-a978-043f840d5947")
+	)
+	(wire
+		(pts
+			(xy 240.03 143.51) (xy 233.68 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f2ab707-98d0-47ab-adc2-69d05e8569fb")
 	)
 	(wire
 		(pts
@@ -453,6 +652,16 @@
 	)
 	(wire
 		(pts
+			(xy 240.03 113.03) (xy 240.03 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b251122b-9f65-4cb2-8fc0-96013e7c2360")
+	)
+	(wire
+		(pts
 			(xy 177.8 133.35) (xy 193.04 133.35)
 		)
 		(stroke
@@ -460,6 +669,16 @@
 			(type default)
 		)
 		(uuid "b301366c-2a29-4da1-9f8b-88472cf0e4cd")
+	)
+	(wire
+		(pts
+			(xy 240.03 133.35) (xy 233.68 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b688589f-6ade-4527-ad56-b1cf5ffc1611")
 	)
 	(wire
 		(pts
@@ -503,6 +722,16 @@
 	)
 	(wire
 		(pts
+			(xy 240.03 146.05) (xy 240.03 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be272ffb-2c52-4ce5-9587-64917670f9a6")
+	)
+	(wire
+		(pts
 			(xy 53.34 87.63) (xy 71.12 87.63)
 		)
 		(stroke
@@ -510,6 +739,16 @@
 			(type default)
 		)
 		(uuid "c23598e8-6561-4068-9391-8f495c4c2264")
+	)
+	(wire
+		(pts
+			(xy 177.8 115.57) (xy 193.04 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c47fca30-606d-4860-84e6-31b753c6b0a2")
 	)
 	(wire
 		(pts
@@ -533,6 +772,16 @@
 	)
 	(wire
 		(pts
+			(xy 53.34 77.47) (xy 71.12 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd916460-71fa-40bb-990f-a50331c48476")
+	)
+	(wire
+		(pts
 			(xy 177.8 105.41) (xy 193.04 105.41)
 		)
 		(stroke
@@ -543,7 +792,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 63.5) (xy 93.98 58.42)
+			(xy 91.44 63.5) (xy 91.44 58.42)
 		)
 		(stroke
 			(width 0)
@@ -3791,17 +4040,17 @@
 			)
 		)
 	)
-	(label "UART1_TX"
-		(at 177.8 115.57 0)
+	(label "ERR_LED"
+		(at 53.34 77.47 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "059c9608-75a4-4f22-a41f-380ce130a550")
+		(uuid "04693817-234d-4086-9c2e-1add2661acf1")
 	)
-	(label "UART1_TX"
+	(label "I2C1_SCL"
 		(at 147.32 91.44 0)
 		(effects
 			(font
@@ -3871,6 +4120,16 @@
 		)
 		(uuid "3c51ae36-99d4-4a63-b716-42fdb7ab9e00")
 	)
+	(label "I2C1_SDA"
+		(at 177.8 115.57 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3c7b8e40-cf7c-4491-a4bd-22e1fc02fc8c")
+	)
 	(label "SPI0_RX"
 		(at 177.8 130.81 0)
 		(effects
@@ -3921,6 +4180,16 @@
 		)
 		(uuid "4c8206a6-53b3-4dc7-9247-9266e130b457")
 	)
+	(label "ERR_LED"
+		(at 78.74 66.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "559dbef2-2bea-455d-8acb-456f1043edb2")
+	)
 	(label "SWCLK"
 		(at 179.07 143.51 0)
 		(effects
@@ -3942,7 +4211,7 @@
 		(uuid "70804890-84e8-4095-b6d7-2f1add999544")
 	)
 	(label "SYS_LED"
-		(at 82.55 63.5 0)
+		(at 78.74 63.5 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3981,16 +4250,6 @@
 		)
 		(uuid "9285af5d-ac2b-491d-9de0-175122b78a90")
 	)
-	(label "UART1_RX"
-		(at 177.8 113.03 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "9ec092c1-9b43-40fc-bc29-70238c9f8e41")
-	)
 	(label "SYS_LED"
 		(at 147.32 113.03 180)
 		(effects
@@ -4021,7 +4280,7 @@
 		)
 		(uuid "a83c7b38-9148-49e6-b47b-e8f2a25ea4f3")
 	)
-	(label "I2C0_SDL"
+	(label "I2C0_SCL"
 		(at 147.32 120.65 180)
 		(effects
 			(font
@@ -4031,7 +4290,7 @@
 		)
 		(uuid "b1cc527e-d1df-421a-93b6-b884e47384fd")
 	)
-	(label "I2C0_SDL"
+	(label "I2C0_SCL"
 		(at 177.8 120.65 0)
 		(effects
 			(font
@@ -4131,7 +4390,7 @@
 		)
 		(uuid "d64110f6-8e5d-4cbf-82cc-3cb490d5bbac")
 	)
-	(label "UART1_RX"
+	(label "I2C1_SDA"
 		(at 147.32 93.98 0)
 		(effects
 			(font
@@ -4160,6 +4419,16 @@
 			(justify left bottom)
 		)
 		(uuid "e98c6f65-3b0f-4d5b-abbd-fd8d8041c64a")
+	)
+	(label "I2C1_SCL"
+		(at 177.8 113.03 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ea3ffb09-171b-454c-95d5-40f1b818e142")
 	)
 	(label "USB_VBUS_DET"
 		(at 147.32 115.57 180)
@@ -4212,8 +4481,8 @@
 		(uuid "fd85e4d8-37f4-4dc3-ba74-3fe27ff89946")
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 231.14 133.35 0)
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 231.14 133.35 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -4222,24 +4491,22 @@
 		(fields_autoplaced yes)
 		(uuid "25411a69-8cd9-42d0-9d2b-f53671f2ca80")
 		(property "Reference" "H3"
-			(at 233.68 132.0799 0)
+			(at 229.87 127 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 233.68 134.6199 0)
+			(at 229.87 129.54 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_ISO14580"
+		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_Pad_Via"
 			(at 231.14 133.35 0)
 			(effects
 				(font
@@ -4257,7 +4524,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
+		(property "Description" "Mounting Hole with connection"
 			(at 231.14 133.35 0)
 			(effects
 				(font
@@ -4265,6 +4532,9 @@
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "c91bc573-128a-41a9-afbd-9caf3c68605e")
 		)
 		(instances
 			(project ""
@@ -4276,8 +4546,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 231.14 125.73 0)
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 231.14 123.19 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -4286,25 +4556,23 @@
 		(fields_autoplaced yes)
 		(uuid "2fb13918-20bf-4eac-a4f0-f0b68b9efcf1")
 		(property "Reference" "H2"
-			(at 233.68 124.4599 0)
+			(at 229.87 116.84 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 233.68 126.9999 0)
+			(at 229.87 119.38 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_ISO14580"
-			(at 231.14 125.73 0)
+		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_Pad_Via"
+			(at 231.14 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4313,7 +4581,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 231.14 125.73 0)
+			(at 231.14 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4321,14 +4589,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
-			(at 231.14 125.73 0)
+		(property "Description" "Mounting Hole with connection"
+			(at 231.14 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "cce1318c-feb3-4ffa-a119-60cdef30057e")
 		)
 		(instances
 			(project ""
@@ -4340,34 +4611,33 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 231.14 118.11 0)
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 231.14 113.03 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "301c2254-75ff-415c-806a-ec2d74619b43")
 		(property "Reference" "H1"
-			(at 233.68 116.8399 0)
+			(at 229.87 106.68 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 233.68 119.3799 0)
+			(at 229.87 109.22 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_ISO14580"
-			(at 231.14 118.11 0)
+		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_Pad_Via"
+			(at 231.14 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4376,7 +4646,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 231.14 118.11 0)
+			(at 231.14 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4384,14 +4654,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
-			(at 231.14 118.11 0)
+		(property "Description" "Mounting Hole with connection"
+			(at 231.14 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "fd578832-e89f-4eaa-bd8f-c643879af949")
 		)
 		(instances
 			(project ""
@@ -4403,8 +4676,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 231.14 140.97 0)
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 231.14 143.51 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -4413,25 +4686,23 @@
 		(fields_autoplaced yes)
 		(uuid "9af86fb8-c2bb-42a0-8f68-55d974f3128c")
 		(property "Reference" "H4"
-			(at 233.68 139.6999 0)
+			(at 229.87 137.16 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 233.68 142.2399 0)
+			(at 229.87 139.7 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_ISO14580"
-			(at 231.14 140.97 0)
+		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_Pad_Via"
+			(at 231.14 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4440,7 +4711,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 231.14 140.97 0)
+			(at 231.14 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4448,19 +4719,88 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
-			(at 231.14 140.97 0)
+		(property "Description" "Mounting Hole with connection"
+			(at 231.14 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "7b445a6a-984a-435e-b54c-2562d5c23a3e")
 		)
 		(instances
 			(project ""
 				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b"
 					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 240.03 146.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f8a1d699-e53a-4d84-93f7-81a8023cd10c")
+		(property "Reference" "#PWR01"
+			(at 240.03 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 240.03 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 240.03 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 240.03 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 240.03 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2bf685e2-f803-471f-b411-653adfa129d8")
+		)
+		(instances
+			(project ""
+				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b"
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -4501,7 +4841,7 @@
 				(hide yes)
 			)
 		)
-		(pin "USBH_D+" input
+		(pin "USBH_D+" bidirectional
 			(at 53.34 113.03 0)
 			(uuid "0efe8d04-acad-41e6-b582-7a0febc648fd")
 			(effects
@@ -4511,7 +4851,7 @@
 				(justify right)
 			)
 		)
-		(pin "USBH_D-" input
+		(pin "USBH_D-" bidirectional
 			(at 53.34 115.57 0)
 			(uuid "03f35f69-c0fe-4ff4-ab88-ce865a744366")
 			(effects
@@ -4540,8 +4880,8 @@
 		)
 	)
 	(sheet
-		(at 91.44 40.64)
-		(size 20.32 17.78)
+		(at 86.36 40.64)
+		(size 25.4 17.78)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -4556,7 +4896,7 @@
 		)
 		(uuid "1cae47f4-7f3b-428d-9fc5-167ed0f41ade")
 		(property "Sheetname" "USB & Power Supply"
-			(at 90.7284 58.42 90)
+			(at 85.6484 58.42 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4574,9 +4914,9 @@
 				(hide yes)
 			)
 		)
-		(pin "USB_D-" input
-			(at 101.6 58.42 270)
-			(uuid "2cd9a979-1df0-4435-a59c-6a59b133d227")
+		(pin "LED_G" input
+			(at 91.44 58.42 270)
+			(uuid "477d16c8-377b-42af-ac4a-8ede566d41a2")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4584,29 +4924,39 @@
 				(justify left)
 			)
 		)
-		(pin "USB_D+" input
-			(at 99.06 58.42 270)
-			(uuid "bede4102-089e-4b4b-b7f9-3bb58180e667")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "USB_VBUS_DET" input
-			(at 104.14 58.42 270)
-			(uuid "2f0e72b2-520f-40ec-9fec-1728a1469e08")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "LED" input
+		(pin "LED_R" input
 			(at 93.98 58.42 270)
-			(uuid "90d759e0-3081-4c01-94f9-559f55c6f32e")
+			(uuid "8e609f73-fc2b-406a-b38c-ded2314f1299")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "USB_D+" bidirectional
+			(at 99.06 58.42 270)
+			(uuid "5dfc4780-17a7-43a4-a699-fca8c95d7f8a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "USB_D-" bidirectional
+			(at 101.6 58.42 270)
+			(uuid "ba00f259-2a6a-4973-b34c-f076578e1704")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "USB_VBUS_DET" output
+			(at 104.14 58.42 270)
+			(uuid "3366530b-55c0-461b-8a8f-955988d92c3c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4737,7 +5087,7 @@
 				(justify right)
 			)
 		)
-		(pin "DVI_HPD" input
+		(pin "DVI_HPD" output
 			(at 83.82 149.86 90)
 			(uuid "08a18bd3-4172-42e7-89d0-011744b11761")
 			(effects
@@ -4790,7 +5140,7 @@
 				(hide yes)
 			)
 		)
-		(pin "ADC_PAD0" input
+		(pin "ADC_PAD0" output
 			(at 147.32 83.82 180)
 			(uuid "cbea750f-0d5e-4af7-9020-2239d71b4f0b")
 			(effects
@@ -4800,7 +5150,7 @@
 				(justify left)
 			)
 		)
-		(pin "ADC_PAD1" input
+		(pin "ADC_PAD1" output
 			(at 147.32 81.28 180)
 			(uuid "8f777041-7b5f-47af-95a5-2ceec81e5cf5")
 			(effects
@@ -4916,19 +5266,9 @@
 				(hide yes)
 			)
 		)
-		(pin "I2C_SDA" input
-			(at 193.04 123.19 180)
-			(uuid "adab129a-2a3d-4a0e-851f-f82a5e5e5bbf")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "I2C_SDL" input
+		(pin "I2C0_SCL" input
 			(at 193.04 120.65 180)
-			(uuid "51ccbca0-7093-49f9-b5f5-e13919baf573")
+			(uuid "2a871da0-38ee-4077-9c04-e991e7b2bb86")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4936,9 +5276,9 @@
 				(justify left)
 			)
 		)
-		(pin "SWCLK" input
-			(at 193.04 143.51 180)
-			(uuid "a98ea36f-1d3c-46a0-a9d7-f7b6d4c8e7d1")
+		(pin "I2C0_SDA" bidirectional
+			(at 193.04 123.19 180)
+			(uuid "01ca0394-2c16-4d29-a89c-c6ca711bfce1")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4946,39 +5286,9 @@
 				(justify left)
 			)
 		)
-		(pin "SWDIO" input
-			(at 193.04 146.05 180)
-			(uuid "e02d0be2-1418-4f0b-87e7-0c1918da015d")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "UART0_RX" input
-			(at 193.04 105.41 180)
-			(uuid "fa934980-a008-4ab4-8466-cd46db773e01")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "UART0_TX" input
-			(at 193.04 107.95 180)
-			(uuid "c1b2f743-54e9-4a2a-9851-0af1195d4230")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "UART1_RX" input
+		(pin "I2C1_SCL" input
 			(at 193.04 113.03 180)
-			(uuid "6d9bd2d3-5e10-48fc-ad07-7dc06606256c")
+			(uuid "0dad4efd-9774-438a-9208-05fd64c2d5b5")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4986,9 +5296,9 @@
 				(justify left)
 			)
 		)
-		(pin "UART1_TX" input
+		(pin "I2C1_SDA" bidirectional
 			(at 193.04 115.57 180)
-			(uuid "073fbcff-7edd-4536-a970-fcc6ccb57e07")
+			(uuid "992e3688-b32f-4481-af04-5bfac4a82db8")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4998,7 +5308,7 @@
 		)
 		(pin "SPI_CS" input
 			(at 193.04 128.27 180)
-			(uuid "b78c9c53-2a63-411b-90b3-1fdafee9519a")
+			(uuid "3870854b-1439-43cf-99dd-ae13cc455a7f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5006,9 +5316,9 @@
 				(justify left)
 			)
 		)
-		(pin "SPI_RX" input
+		(pin "SPI_RX" output
 			(at 193.04 130.81 180)
-			(uuid "caa9b0e4-ed9d-4033-b958-a7ac8534c8d1")
+			(uuid "18445f81-4480-4ea6-8db6-14e339b82c4e")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5018,7 +5328,7 @@
 		)
 		(pin "SPI_SCK" input
 			(at 193.04 135.89 180)
-			(uuid "afbefd15-666a-421f-b124-202527cb92b5")
+			(uuid "b6151d7c-23e6-4cf8-80e9-32a0224934ac")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5028,7 +5338,47 @@
 		)
 		(pin "SPI_TX" input
 			(at 193.04 133.35 180)
-			(uuid "9cf4b6e2-41df-4f4e-b090-12c8a66f6248")
+			(uuid "0dac76d5-b729-4bce-a1e3-9e582a3a24f2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SWCLK" input
+			(at 193.04 143.51 180)
+			(uuid "a9a7262d-863b-49ed-bb71-f5b465b0ae3d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SWDIO" bidirectional
+			(at 193.04 146.05 180)
+			(uuid "7eb39060-7db0-42fe-9fbd-d79e0e7bdc80")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "UART0_RX" output
+			(at 193.04 105.41 180)
+			(uuid "3152be6c-6baf-402e-bad7-bf869e08386e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "UART0_TX" input
+			(at 193.04 107.95 180)
+			(uuid "6680fd48-08a6-4cde-8606-35f9645dd485")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5079,7 +5429,7 @@
 				(hide yes)
 			)
 		)
-		(pin "GPIO2" input
+		(pin "GPIO2" output
 			(at 71.12 82.55 180)
 			(uuid "a1279380-4aca-4acf-8c7f-5eb321c04000")
 			(effects
@@ -5109,7 +5459,7 @@
 				(justify left)
 			)
 		)
-		(pin "GPIO5" input
+		(pin "GPIO5" output
 			(at 71.12 90.17 180)
 			(uuid "4620542c-168b-43be-b28f-e816ccd83488")
 			(effects
@@ -5119,7 +5469,7 @@
 				(justify left)
 			)
 		)
-		(pin "GPIO6" input
+		(pin "GPIO6" output
 			(at 71.12 92.71 180)
 			(uuid "e02500ee-97d4-4ad6-84b6-80f8a7c39169")
 			(effects
@@ -5129,7 +5479,7 @@
 				(justify left)
 			)
 		)
-		(pin "GPIO7" input
+		(pin "GPIO7" output
 			(at 71.12 95.25 180)
 			(uuid "19e989eb-9fcd-46db-8247-0bfa4d030ec8")
 			(effects
@@ -5139,7 +5489,7 @@
 				(justify left)
 			)
 		)
-		(pin "GPIO8" input
+		(pin "GPIO8" bidirectional
 			(at 71.12 113.03 180)
 			(uuid "33fb69ca-8d8b-44d8-922d-e2747543372b")
 			(effects
@@ -5149,7 +5499,7 @@
 				(justify left)
 			)
 		)
-		(pin "GPIO9" input
+		(pin "GPIO9" bidirectional
 			(at 71.12 115.57 180)
 			(uuid "23afafa9-b328-422e-913b-67df62e23cbd")
 			(effects
@@ -5159,7 +5509,7 @@
 				(justify left)
 			)
 		)
-		(pin "GPIO10" input
+		(pin "GPIO10" output
 			(at 71.12 118.11 180)
 			(uuid "cf548303-d159-4f1d-98e9-677c232811a4")
 			(effects
@@ -5179,7 +5529,7 @@
 				(justify left)
 			)
 		)
-		(pin "GPIO12" input
+		(pin "GPIO12" output
 			(at 88.9 132.08 270)
 			(uuid "2612dcad-c5f8-40d5-9b63-b704df86758f")
 			(effects
@@ -5189,7 +5539,7 @@
 				(justify left)
 			)
 		)
-		(pin "GPIO13" input
+		(pin "GPIO13" output
 			(at 91.44 132.08 270)
 			(uuid "3433a52c-011f-446c-bcc7-864ae694f63b")
 			(effects
@@ -5199,7 +5549,7 @@
 				(justify left)
 			)
 		)
-		(pin "GPIO14" input
+		(pin "GPIO14" output
 			(at 93.98 132.08 270)
 			(uuid "c6cf1d1c-2753-4fc1-ab7f-d7877e22a250")
 			(effects
@@ -5209,7 +5559,7 @@
 				(justify left)
 			)
 		)
-		(pin "GPIO15" input
+		(pin "GPIO15" output
 			(at 96.52 132.08 270)
 			(uuid "38fa4599-eb5e-4141-93fb-541abb365f49")
 			(effects
@@ -5219,7 +5569,7 @@
 				(justify left)
 			)
 		)
-		(pin "GPIO16" input
+		(pin "GPIO16" output
 			(at 99.06 132.08 270)
 			(uuid "280ba8c6-46f3-4d83-8d1e-9b4264ecb2f0")
 			(effects
@@ -5229,7 +5579,7 @@
 				(justify left)
 			)
 		)
-		(pin "GPIO17" input
+		(pin "GPIO17" output
 			(at 101.6 132.08 270)
 			(uuid "2519ed8e-f734-45df-ae51-e79072719f79")
 			(effects
@@ -5239,7 +5589,7 @@
 				(justify left)
 			)
 		)
-		(pin "GPIO18" input
+		(pin "GPIO18" output
 			(at 104.14 132.08 270)
 			(uuid "603e5aef-d928-4e23-94a9-11493d1237a2")
 			(effects
@@ -5249,7 +5599,7 @@
 				(justify left)
 			)
 		)
-		(pin "GPIO19" input
+		(pin "GPIO19" output
 			(at 106.68 132.08 270)
 			(uuid "9545a415-e6d7-4ea9-9b4a-9f24a10dd66b")
 			(effects
@@ -5259,7 +5609,7 @@
 				(justify left)
 			)
 		)
-		(pin "GPIO20" input
+		(pin "GPIO20" output
 			(at 129.54 123.19 0)
 			(uuid "18d7f5d5-f9e1-41b9-8e77-851a0f0e19b0")
 			(effects
@@ -5269,7 +5619,7 @@
 				(justify right)
 			)
 		)
-		(pin "GPIO21" input
+		(pin "GPIO21" output
 			(at 129.54 120.65 0)
 			(uuid "11c06627-573a-48f6-98b1-3102b7a477b9")
 			(effects
@@ -5289,7 +5639,7 @@
 				(justify right)
 			)
 		)
-		(pin "GPIO23" input
+		(pin "GPIO23" output
 			(at 129.54 113.03 0)
 			(uuid "4ea99b9d-72a5-4ab6-9f54-4c91a8fac5a4")
 			(effects
@@ -5299,7 +5649,7 @@
 				(justify right)
 			)
 		)
-		(pin "GPIO24" input
+		(pin "GPIO24" output
 			(at 129.54 106.68 0)
 			(uuid "8b6ad155-2d48-471e-9644-3d03b6e08fb1")
 			(effects
@@ -5359,7 +5709,7 @@
 				(justify left)
 			)
 		)
-		(pin "USB_D+" input
+		(pin "USB_D+" bidirectional
 			(at 99.06 73.66 90)
 			(uuid "6e28266a-5046-4196-b3e2-e96805d8b737")
 			(effects
@@ -5369,7 +5719,7 @@
 				(justify right)
 			)
 		)
-		(pin "USB_D-" input
+		(pin "USB_D-" bidirectional
 			(at 101.6 73.66 90)
 			(uuid "6262688f-d19b-4463-9e78-129e930d9b2b")
 			(effects
@@ -5389,7 +5739,7 @@
 				(justify left)
 			)
 		)
-		(pin "GPIO25" input
+		(pin "GPIO25" output
 			(at 129.54 104.14 0)
 			(uuid "b9637040-c93d-4d97-afed-4649e385d5d5")
 			(effects
@@ -5399,7 +5749,7 @@
 				(justify right)
 			)
 		)
-		(pin "GPIO1" input
+		(pin "GPIO1" output
 			(at 71.12 77.47 180)
 			(uuid "cf1fcb24-163c-4d1b-bff8-6b592eaddd92")
 			(effects

@@ -826,8 +826,8 @@
 		(uuid "ee719aa3-6519-43fc-bb11-ca65566fff03")
 	)
 	(fp_text_box "This work by RubyKaigi 2026 Team is licensed under CC BY 4.0.\nhttps://rubykaigi.org/2026/goodies/"
-		(start -19.992957 7.65)
-		(end 19.992958 17.95)
+		(start 19.98 -3.44)
+		(end 59.965915 6.86)
 		(margins 1.0025 1.0025 1.0025 1.0025)
 		(layer "Cmts.User")
 		(uuid "8fb8e5d6-4548-45ff-9a1e-e3d68ac88ed9")

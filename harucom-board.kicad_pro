@@ -37,8 +37,8 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 2.2,
-          "height": 2.2,
+          "drill": 1.5,
+          "height": 3.5,
           "width": 2.2
         },
         "silk_line_width": 0.12,
@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.2
+          "min_clearance": 0.0
         }
       },
       "diff_pair_dimensions": [
@@ -65,6 +65,34 @@
         ],
         [
           "footprint_type_mismatch|146329999|86400001|437520a2-ecd7-4d83-ad39-7c0d26cdf2e8|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "silk_edge_clearance|111649999|78400001|f29fb07c-6ff7-44e5-b5f9-121a8e1caafa|9ae117ba-8a1b-4ffd-b82a-d30564764221",
+          ""
+        ],
+        [
+          "silk_edge_clearance|120809999|78400001|f29fb07c-6ff7-44e5-b5f9-121a8e1caafa|dc3b1c9b-f94e-42c6-9653-accae228b42a",
+          ""
+        ],
+        [
+          "silk_edge_clearance|125629999|78400001|f29fb07c-6ff7-44e5-b5f9-121a8e1caafa|a7d7366b-b63b-448e-95df-de3fdd3d97a2",
+          ""
+        ],
+        [
+          "silk_edge_clearance|126129999|78400001|f29fb07c-6ff7-44e5-b5f9-121a8e1caafa|d4ae2175-a731-4b83-9f22-dc348ecbe038",
+          ""
+        ],
+        [
+          "silk_edge_clearance|131129999|78400001|f29fb07c-6ff7-44e5-b5f9-121a8e1caafa|3ddf7456-7b68-4a90-9af0-15c882e22244",
+          ""
+        ],
+        [
+          "silk_edge_clearance|131629999|78400001|f29fb07c-6ff7-44e5-b5f9-121a8e1caafa|4a217997-dea4-4da6-882b-b6c2dbce8bcb",
+          ""
+        ],
+        [
+          "silk_edge_clearance|131629999|78400001|f29fb07c-6ff7-44e5-b5f9-121a8e1caafa|9fc1bfdb-1b1f-45ad-8467-e23d99024703",
           ""
         ]
       ],
@@ -142,7 +170,7 @@
         "min_microvia_drill": 0.15,
         "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
-        "min_text_height": 1.0,
+        "min_text_height": 0.8,
         "min_text_thickness": 0.15,
         "min_through_hole_diameter": 0.15,
         "min_track_width": 0.15,
@@ -270,6 +298,10 @@
   },
   "erc": {
     "erc_exclusions": [
+      [
+        "lib_symbol_mismatch|1676400|1016000|8413a2a4-3368-459d-8f74-f854104c3506|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
       [
         "multiple_net_names|889000|1016000|7237152b-4af6-426e-996a-421420aa23b4|e85d3b53-9072-4bed-a6dd-9e0873378507|/0cb5192e-ac62-478f-bacb-beb1b9be1a5b/1cae47f4-7f3b-428d-9fc5-167ed0f41ade|/0cb5192e-ac62-478f-bacb-beb1b9be1a5b/1cae47f4-7f3b-428d-9fc5-167ed0f41ade|/0cb5192e-ac62-478f-bacb-beb1b9be1a5b/1cae47f4-7f3b-428d-9fc5-167ed0f41ade",
         ""
@@ -499,7 +531,9 @@
     }
   },
   "libraries": {
-    "pinned_footprint_libs": [],
+    "pinned_footprint_libs": [
+      "Harucom_Board"
+    ],
     "pinned_symbol_libs": []
   },
   "meta": {

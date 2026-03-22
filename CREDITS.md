@@ -4,6 +4,7 @@
 
 - Shunsuke Michii (@harukasan)
 
+
 ## RubyKaigi 2026 Logo
 
 - [lib/RubyKaigi_2026.pretty/](lib/RubyKaigi_2026.pretty/)
@@ -11,6 +12,8 @@
 Logo images of RubyKaigi 2026 are converted from [RubyKaigi 2026 Graphic Kit](https://rubykaigi.org/2026/goodies/).
 
 This work by [RubyKaigi 2026](https://rubykaigi.org/2026/) Team is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+Speaker, session, and sponsor information is provided by respective parties and is not covered by this license. 
+
 
 ## Reference Designs & Third-Party Libraries
 

@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Harucom-board")
-		(date "2026-03-04")
-		(rev "260304")
+		(date "2026-03-22")
+		(rev "2")
 		(comment 1 "https://github.com/harukasan/harucom-board/")
 		(comment 2 "SPDX-License-Identifier: CERN-OHL-P-2.0")
 		(comment 3 "© 2026 Shunsuke Michii")
@@ -891,7 +891,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 106.68) (xy 186.69 106.68)
+			(xy 182.88 106.68) (xy 187.96 106.68)
 		)
 		(stroke
 			(width 0)
@@ -951,7 +951,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 121.92) (xy 203.2 121.92)
+			(xy 198.12 121.92) (xy 203.2 121.92)
 		)
 		(stroke
 			(width 0)
@@ -1021,7 +1021,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 121.92) (xy 186.69 121.92)
+			(xy 182.88 121.92) (xy 187.96 121.92)
 		)
 		(stroke
 			(width 0)
@@ -1121,7 +1121,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 106.68) (xy 203.2 106.68)
+			(xy 198.12 106.68) (xy 203.2 106.68)
 		)
 		(stroke
 			(width 0)
@@ -1270,7 +1270,7 @@
 		(uuid "fd41f5ea-abfd-411a-b621-e32ba367e9a3")
 	)
 	(hierarchical_label "ADC_PAD1"
-		(shape input)
+		(shape output)
 		(at 146.05 68.58 180)
 		(effects
 			(font
@@ -1281,7 +1281,7 @@
 		(uuid "2c5e7e65-7b0a-47d2-abac-6e33b4eae1f7")
 	)
 	(hierarchical_label "ADC_PAD0"
-		(shape input)
+		(shape output)
 		(at 44.45 68.58 180)
 		(effects
 			(font
@@ -1301,7 +1301,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "02960018-4076-48db-b140-7d85852ca2ce")
-		(property "Reference" "#PWR051"
+		(property "Reference" "#PWR052"
 			(at 50.8 87.63 0)
 			(effects
 				(font
@@ -1351,7 +1351,7 @@
 		(instances
 			(project ""
 				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b/9eade9ea-9a30-4a42-95b8-9774a26a3a8f"
-					(reference "#PWR051")
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
@@ -1375,7 +1375,7 @@
 				)
 			)
 		)
-		(property "Value" "TS-1187"
+		(property "Value" "TS6612TP"
 			(at 91.44 86.36 0)
 			(effects
 				(font
@@ -1383,7 +1383,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A"
+		(property "Footprint" "Harucom_Board:KEY-SMD_4P-L6.0-W6.0-P4.50-LS9.0"
 			(at 91.44 86.36 0)
 			(effects
 				(font
@@ -1410,6 +1410,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5369159"
+			(at 91.44 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "0060597f-d77f-4ba8-80c6-ace057e98c52")
 		)
@@ -1427,7 +1436,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 191.77 106.68 0)
+		(at 193.04 106.68 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1435,24 +1444,24 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "36bd68d1-0db8-4a95-9ee0-5bacfa4d0385")
-		(property "Reference" "SW8"
-			(at 191.77 99.06 0)
+		(property "Reference" "SW10"
+			(at 193.04 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "TS-1187"
-			(at 191.77 101.6 0)
+		(property "Value" "TS6612TP"
+			(at 193.04 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A"
-			(at 191.77 101.6 0)
+		(property "Footprint" "Harucom_Board:KEY-SMD_4P-L6.0-W6.0-P4.50-LS9.0"
+			(at 193.04 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1461,7 +1470,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 191.77 101.6 0)
+			(at 193.04 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1470,7 +1479,16 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 191.77 106.68 0)
+			(at 193.04 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5369159"
+			(at 193.04 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1487,7 +1505,7 @@
 		(instances
 			(project "hakodate-board"
 				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b/9eade9ea-9a30-4a42-95b8-9774a26a3a8f"
-					(reference "SW8")
+					(reference "SW10")
 					(unit 1)
 				)
 			)
@@ -1503,7 +1521,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3fd4a8a3-e17f-4bd6-aad8-45917c32b1bb")
-		(property "Reference" "#PWR053"
+		(property "Reference" "#PWR054"
 			(at 101.6 133.35 0)
 			(effects
 				(font
@@ -1553,7 +1571,7 @@
 		(instances
 			(project "hakodate-board"
 				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b/9eade9ea-9a30-4a42-95b8-9774a26a3a8f"
-					(reference "#PWR053")
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -1587,7 +1605,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 61.722 60.96 90)
 			(effects
 				(font
@@ -1607,6 +1625,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 63.5 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C21190"
+			(at 66.04 59.6899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1655,7 +1682,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 77.47 77.978 90)
 			(effects
 				(font
@@ -1675,6 +1702,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 77.47 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C21190"
+			(at 77.47 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1707,7 +1743,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "657ae3bd-f630-449d-92d8-1ed6ed2104ca")
-		(property "Reference" "SW11"
+		(property "Reference" "SW9"
 			(at 193.04 83.82 0)
 			(effects
 				(font
@@ -1715,7 +1751,7 @@
 				)
 			)
 		)
-		(property "Value" "TS-1187"
+		(property "Value" "TS6612TP"
 			(at 193.04 86.36 0)
 			(effects
 				(font
@@ -1723,7 +1759,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A"
+		(property "Footprint" "Harucom_Board:KEY-SMD_4P-L6.0-W6.0-P4.50-LS9.0"
 			(at 193.04 86.36 0)
 			(effects
 				(font
@@ -1750,6 +1786,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5369159"
+			(at 193.04 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "7c6e24e7-0fff-4673-8558-a3f4e6a4e361")
 		)
@@ -1759,7 +1804,7 @@
 		(instances
 			(project "hakodate-board"
 				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b/9eade9ea-9a30-4a42-95b8-9774a26a3a8f"
-					(reference "SW11")
+					(reference "SW9")
 					(unit 1)
 				)
 			)
@@ -1783,7 +1828,7 @@
 				)
 			)
 		)
-		(property "Value" "TS-1187"
+		(property "Value" "TS6612TP"
 			(at 91.44 116.84 0)
 			(effects
 				(font
@@ -1791,7 +1836,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A"
+		(property "Footprint" "Harucom_Board:KEY-SMD_4P-L6.0-W6.0-P4.50-LS9.0"
 			(at 91.44 116.84 0)
 			(effects
 				(font
@@ -1811,6 +1856,15 @@
 		)
 		(property "Description" "Push button switch, generic, two pins"
 			(at 91.44 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5369159"
+			(at 91.44 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1859,7 +1913,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 179.07 77.978 90)
 			(effects
 				(font
@@ -1879,6 +1933,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 179.07 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C21190"
+			(at 179.07 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1927,7 +1990,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 179.07 123.698 90)
 			(effects
 				(font
@@ -1947,6 +2010,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 179.07 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25804"
+			(at 179.07 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1997,7 +2069,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Harucom_Board:C_0402_1005Metric_Pad0.47x0.53mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 51.7652 78.74 0)
 			(effects
 				(font
@@ -2017,6 +2089,15 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 50.8 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 54.61 73.6599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2065,7 +2146,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 77.47 108.458 90)
 			(effects
 				(font
@@ -2085,6 +2166,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 77.47 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C23162"
+			(at 77.47 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2133,7 +2223,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 179.07 108.458 90)
 			(effects
 				(font
@@ -2160,6 +2250,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C23162"
+			(at 179.07 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "90cdcb72-aadd-41c7-90b0-672ca7266f4f")
 		)
@@ -2177,7 +2276,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 191.77 121.92 0)
+		(at 193.04 121.92 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2185,24 +2284,24 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8c6da08c-1994-432d-ad49-1781bf7b945e")
-		(property "Reference" "SW9"
-			(at 191.77 114.3 0)
+		(property "Reference" "SW11"
+			(at 193.04 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "TS-1187"
-			(at 191.77 116.84 0)
+		(property "Value" "TS6612TP"
+			(at 193.04 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A"
-			(at 191.77 116.84 0)
+		(property "Footprint" "Harucom_Board:KEY-SMD_4P-L6.0-W6.0-P4.50-LS9.0"
+			(at 193.04 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2211,7 +2310,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 191.77 116.84 0)
+			(at 193.04 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2220,7 +2319,16 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 191.77 121.92 0)
+			(at 193.04 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5369159"
+			(at 193.04 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2237,7 +2345,7 @@
 		(instances
 			(project "hakodate-board"
 				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b/9eade9ea-9a30-4a42-95b8-9774a26a3a8f"
-					(reference "SW9")
+					(reference "SW11")
 					(unit 1)
 				)
 			)
@@ -2253,7 +2361,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8efc9fd7-c815-4c53-9912-e0b991648554")
-		(property "Reference" "#PWR056"
+		(property "Reference" "#PWR057"
 			(at 203.2 133.35 0)
 			(effects
 				(font
@@ -2303,7 +2411,7 @@
 		(instances
 			(project "hakodate-board"
 				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b/9eade9ea-9a30-4a42-95b8-9774a26a3a8f"
-					(reference "#PWR056")
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -2337,7 +2445,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Harucom_Board:C_0402_1005Metric_Pad0.47x0.53mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 153.3652 78.74 0)
 			(effects
 				(font
@@ -2357,6 +2465,15 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 152.4 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 156.21 73.6599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2407,7 +2524,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 163.322 60.96 90)
 			(effects
 				(font
@@ -2427,6 +2544,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 165.1 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C21190"
+			(at 167.64 59.6899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2459,7 +2585,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bdab1a91-0f13-4290-b3e9-02505060e138")
-		(property "Reference" "#PWR055"
+		(property "Reference" "#PWR056"
 			(at 165.1 57.15 0)
 			(effects
 				(font
@@ -2509,7 +2635,7 @@
 		(instances
 			(project "hakodate-board"
 				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b/9eade9ea-9a30-4a42-95b8-9774a26a3a8f"
-					(reference "#PWR055")
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
@@ -2541,7 +2667,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 179.07 93.218 90)
 			(effects
 				(font
@@ -2561,6 +2687,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 179.07 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C4190"
+			(at 179.07 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2593,7 +2728,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c41e7cee-2ceb-4d49-8857-3caabc48cb9e")
-		(property "Reference" "#PWR054"
+		(property "Reference" "#PWR055"
 			(at 152.4 87.63 0)
 			(effects
 				(font
@@ -2643,7 +2778,7 @@
 		(instances
 			(project ""
 				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b/9eade9ea-9a30-4a42-95b8-9774a26a3a8f"
-					(reference "#PWR054")
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
@@ -2659,7 +2794,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c59eac09-b8aa-4120-96cc-07f586a9c1e3")
-		(property "Reference" "SW10"
+		(property "Reference" "SW8"
 			(at 193.04 68.58 0)
 			(effects
 				(font
@@ -2667,7 +2802,7 @@
 				)
 			)
 		)
-		(property "Value" "TS-1187"
+		(property "Value" "TS6612TP"
 			(at 193.04 71.12 0)
 			(effects
 				(font
@@ -2675,7 +2810,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A"
+		(property "Footprint" "Harucom_Board:KEY-SMD_4P-L6.0-W6.0-P4.50-LS9.0"
 			(at 193.04 71.12 0)
 			(effects
 				(font
@@ -2702,6 +2837,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5369159"
+			(at 193.04 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "09761739-c5ea-488a-a584-e8751839a3ec")
 		)
@@ -2711,7 +2855,7 @@
 		(instances
 			(project "hakodate-board"
 				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b/9eade9ea-9a30-4a42-95b8-9774a26a3a8f"
-					(reference "SW10")
+					(reference "SW8")
 					(unit 1)
 				)
 			)
@@ -2743,7 +2887,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 77.47 93.218 90)
 			(effects
 				(font
@@ -2763,6 +2907,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 77.47 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C4190"
+			(at 77.47 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2803,7 +2956,7 @@
 				)
 			)
 		)
-		(property "Value" "TS-1187"
+		(property "Value" "TS6612TP"
 			(at 91.44 101.6 0)
 			(effects
 				(font
@@ -2811,7 +2964,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A"
+		(property "Footprint" "Harucom_Board:KEY-SMD_4P-L6.0-W6.0-P4.50-LS9.0"
 			(at 91.44 101.6 0)
 			(effects
 				(font
@@ -2831,6 +2984,15 @@
 		)
 		(property "Description" "Push button switch, generic, two pins"
 			(at 91.44 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5369159"
+			(at 91.44 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2879,7 +3041,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 77.47 123.698 90)
 			(effects
 				(font
@@ -2899,6 +3061,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 77.47 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25804"
+			(at 77.47 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2931,7 +3102,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ef1a8cd7-ce5d-4ebe-81c1-82c6eecc0998")
-		(property "Reference" "#PWR052"
+		(property "Reference" "#PWR053"
 			(at 63.5 57.15 0)
 			(effects
 				(font
@@ -2981,7 +3152,7 @@
 		(instances
 			(project "hakodate-board"
 				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b/9eade9ea-9a30-4a42-95b8-9774a26a3a8f"
-					(reference "#PWR052")
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -3005,7 +3176,7 @@
 				)
 			)
 		)
-		(property "Value" "TS-1187"
+		(property "Value" "TS6612TP"
 			(at 91.44 71.12 0)
 			(effects
 				(font
@@ -3013,7 +3184,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A"
+		(property "Footprint" "Harucom_Board:KEY-SMD_4P-L6.0-W6.0-P4.50-LS9.0"
 			(at 91.44 71.12 0)
 			(effects
 				(font
@@ -3033,6 +3204,15 @@
 		)
 		(property "Description" "Push button switch, generic, two pins"
 			(at 91.44 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5369159"
+			(at 91.44 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)

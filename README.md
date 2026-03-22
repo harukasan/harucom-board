@@ -91,7 +91,7 @@ harucom-board/
 
 ## Documentation
 
-- [Schematic (PDF)](docs/harucom-board-schematic.pdf)
+- [Schematic (PDF)](docs/harucom-board-schematic-rev_2.pdf)
 
 ## Tools
 
