@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Harucom-board")
-		(date "2026-03-23")
-		(rev "2B")
+		(date "2026-04-03")
+		(rev "3B")
 		(comment 1 "https://github.com/harukasan/harucom-board/")
 		(comment 2 "SPDX-License-Identifier: CERN-OHL-P-2.0")
 		(comment 3 "© 2026 Shunsuke Michii")
@@ -1988,7 +1988,7 @@
 			(uuid "9a1d4419-7e6a-4700-84a0-161cd800c8a3")
 		)
 		(instances
-			(project ""
+			(project "harucom-board"
 				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b/d71bb1da-6431-4b72-87ca-46892dee63ab"
 					(reference "R30")
 					(unit 1)
@@ -2054,7 +2054,7 @@
 			(uuid "d963b3a3-36a0-49d9-8cee-92be66bd0465")
 		)
 		(instances
-			(project ""
+			(project "harucom-board"
 				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b/d71bb1da-6431-4b72-87ca-46892dee63ab"
 					(reference "#PWR045")
 					(unit 1)
@@ -2120,7 +2120,7 @@
 			(uuid "395e1ebc-c212-4e39-853f-018de05c55a4")
 		)
 		(instances
-			(project ""
+			(project "harucom-board"
 				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b/d71bb1da-6431-4b72-87ca-46892dee63ab"
 					(reference "#PWR049")
 					(unit 1)
@@ -2197,7 +2197,7 @@
 			(uuid "a67e4cd9-96bd-4d6f-9b79-5f619e472352")
 		)
 		(instances
-			(project ""
+			(project "harucom-board"
 				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b/d71bb1da-6431-4b72-87ca-46892dee63ab"
 					(reference "R28")
 					(unit 1)
@@ -2263,7 +2263,7 @@
 			(uuid "9ef5f05e-2385-428b-8445-58dfae3efe95")
 		)
 		(instances
-			(project ""
+			(project "harucom-board"
 				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b/d71bb1da-6431-4b72-87ca-46892dee63ab"
 					(reference "#PWR047")
 					(unit 1)
@@ -2342,7 +2342,7 @@
 			(uuid "1000e44f-3f9c-4750-9f12-25b7e666d449")
 		)
 		(instances
-			(project ""
+			(project "harucom-board"
 				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b/d71bb1da-6431-4b72-87ca-46892dee63ab"
 					(reference "C26")
 					(unit 1)
@@ -2419,7 +2419,7 @@
 			(uuid "81afdb50-98ce-4cfe-95a6-80da1c34e9c4")
 		)
 		(instances
-			(project ""
+			(project "harucom-board"
 				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b/d71bb1da-6431-4b72-87ca-46892dee63ab"
 					(reference "C27")
 					(unit 1)
@@ -2504,7 +2504,7 @@
 			(uuid "4cf74da7-bbdf-40d4-8253-a360176ec8db")
 		)
 		(instances
-			(project ""
+			(project "harucom-board"
 				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b/d71bb1da-6431-4b72-87ca-46892dee63ab"
 					(reference "J4")
 					(unit 1)
@@ -2570,7 +2570,7 @@
 			(uuid "1c96d2c9-008e-4f0e-8843-0e556b568080")
 		)
 		(instances
-			(project ""
+			(project "harucom-board"
 				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b/d71bb1da-6431-4b72-87ca-46892dee63ab"
 					(reference "#PWR046")
 					(unit 1)
@@ -2647,7 +2647,7 @@
 			(uuid "f54fa94f-b04b-4fab-9355-05e72bf32464")
 		)
 		(instances
-			(project ""
+			(project "harucom-board"
 				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b/d71bb1da-6431-4b72-87ca-46892dee63ab"
 					(reference "R29")
 					(unit 1)
@@ -2726,7 +2726,7 @@
 			(uuid "032c9430-1259-46fd-9b65-82ea77201262")
 		)
 		(instances
-			(project ""
+			(project "harucom-board"
 				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b/d71bb1da-6431-4b72-87ca-46892dee63ab"
 					(reference "R31")
 					(unit 1)
@@ -2803,7 +2803,7 @@
 			(uuid "c49b8898-7fec-4a85-bd28-4358d554b8d3")
 		)
 		(instances
-			(project ""
+			(project "harucom-board"
 				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b/d71bb1da-6431-4b72-87ca-46892dee63ab"
 					(reference "C28")
 					(unit 1)
@@ -2882,7 +2882,7 @@
 			(uuid "3d2e935e-93df-423e-b21a-399d1d8412c3")
 		)
 		(instances
-			(project ""
+			(project "harucom-board"
 				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b/d71bb1da-6431-4b72-87ca-46892dee63ab"
 					(reference "R32")
 					(unit 1)
@@ -2948,7 +2948,7 @@
 			(uuid "ebb20202-2841-440f-8c9c-91c1964ddd40")
 		)
 		(instances
-			(project ""
+			(project "harucom-board"
 				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b/d71bb1da-6431-4b72-87ca-46892dee63ab"
 					(reference "#PWR048")
 					(unit 1)
@@ -3014,7 +3014,7 @@
 			(uuid "aa5a1522-b97e-4f20-bcd0-01eb46fa0e27")
 		)
 		(instances
-			(project ""
+			(project "harucom-board"
 				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b/d71bb1da-6431-4b72-87ca-46892dee63ab"
 					(reference "#PWR050")
 					(unit 1)
@@ -3082,7 +3082,7 @@
 			(uuid "89662131-aedf-4fb8-8301-d2e1b8bd3228")
 		)
 		(instances
-			(project ""
+			(project "harucom-board"
 				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b/d71bb1da-6431-4b72-87ca-46892dee63ab"
 					(reference "NT1")
 					(unit 1)
@@ -3149,7 +3149,7 @@
 			(uuid "5fc2036a-1c19-4a27-ab08-8e40edfa0fa5")
 		)
 		(instances
-			(project ""
+			(project "harucom-board"
 				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b/d71bb1da-6431-4b72-87ca-46892dee63ab"
 					(reference "#FLG07")
 					(unit 1)
@@ -3215,7 +3215,7 @@
 			(uuid "d0d702d3-3ece-4e21-bf7c-7d7c566707e0")
 		)
 		(instances
-			(project ""
+			(project "harucom-board"
 				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b/d71bb1da-6431-4b72-87ca-46892dee63ab"
 					(reference "#PWR051")
 					(unit 1)
@@ -3294,7 +3294,7 @@
 			(uuid "93b9f4a5-8ca1-43fd-9623-7d4fd23f9290")
 		)
 		(instances
-			(project ""
+			(project "harucom-board"
 				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b/d71bb1da-6431-4b72-87ca-46892dee63ab"
 					(reference "D8")
 					(unit 1)
@@ -3373,7 +3373,7 @@
 			(uuid "61b40438-4b98-4d5c-a156-2cae3d037c92")
 		)
 		(instances
-			(project ""
+			(project "harucom-board"
 				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b/d71bb1da-6431-4b72-87ca-46892dee63ab"
 					(reference "C25")
 					(unit 1)
@@ -3452,7 +3452,7 @@
 			(uuid "f1c781f4-4527-4651-88e5-a3d8d0330a59")
 		)
 		(instances
-			(project ""
+			(project "harucom-board"
 				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b/d71bb1da-6431-4b72-87ca-46892dee63ab"
 					(reference "R33")
 					(unit 1)
@@ -3531,7 +3531,7 @@
 			(uuid "c7f1082b-150b-4e68-b1b5-c3b3bb0ecabc")
 		)
 		(instances
-			(project ""
+			(project "harucom-board"
 				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b/d71bb1da-6431-4b72-87ca-46892dee63ab"
 					(reference "D7")
 					(unit 1)

@@ -6,34 +6,30 @@
 	(paper "A4")
 	(title_block
 		(title "Harucom-board")
-		(date "2026-03-23")
-		(rev "2B")
+		(date "2026-04-03")
+		(rev "3B")
 		(comment 1 "https://github.com/harukasan/harucom-board/")
 		(comment 2 "SPDX-License-Identifier: CERN-OHL-P-2.0")
 		(comment 3 "© 2026 Shunsuke Michii")
 	)
 	(lib_symbols
-		(symbol "Mechanical:MountingHole_Pad"
-			(pin_numbers
-				(hide yes)
-			)
+		(symbol "Mechanical:MountingHole"
 			(pin_names
 				(offset 1.016)
-				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom no)
 			(on_board yes)
 			(property "Reference" "H"
-				(at 0 6.35 0)
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "MountingHole_Pad"
-				(at 0 4.445 0)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -58,7 +54,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Mounting Hole with connection"
+			(property "Description" "Mounting Hole without connection"
 				(at 0 0 0)
 				(effects
 					(font
@@ -76,7 +72,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "MountingHole*Pad*"
+			(property "ki_fp_filters" "MountingHole*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -85,9 +81,9 @@
 					(hide yes)
 				)
 			)
-			(symbol "MountingHole_Pad_0_1"
+			(symbol "MountingHole_0_1"
 				(circle
-					(center 0 1.27)
+					(center 0 0)
 					(radius 1.27)
 					(stroke
 						(width 1.27)
@@ -95,127 +91,6 @@
 					)
 					(fill
 						(type none)
-					)
-				)
-			)
-			(symbol "MountingHole_Pad_1_1"
-				(pin input line
-					(at 0 -2.54 90)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "power:GND"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "GND"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "GND_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "GND_1_1"
-				(pin power_in line
-					(at 0 0 270)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
 					)
 				)
 			)
@@ -231,24 +106,6 @@
 			)
 		)
 		(uuid "7e80d3a0-1875-4d9b-b38a-0c70eea6920a")
-	)
-	(junction
-		(at 240.03 143.51)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "086f26db-1a21-4120-a48f-0085f9cf41b5")
-	)
-	(junction
-		(at 240.03 133.35)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "598cafba-904c-44d9-8ef3-84fb36d3cc0a")
-	)
-	(junction
-		(at 240.03 123.19)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e2de38cc-9a8c-473d-b210-7890ded7d200")
 	)
 	(wire
 		(pts
@@ -292,16 +149,6 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 143.51) (xy 240.03 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1a816e5e-8958-4e9c-bb81-c6dfe404357b")
-	)
-	(wire
-		(pts
 			(xy 177.8 107.95) (xy 193.04 107.95)
 		)
 		(stroke
@@ -329,16 +176,6 @@
 			(type default)
 		)
 		(uuid "2c56573d-97fa-43d9-994d-5b9afb1f1b12")
-	)
-	(wire
-		(pts
-			(xy 240.03 133.35) (xy 240.03 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2d11cd2c-9ccf-40bb-b05a-0f01235bcab9")
 	)
 	(wire
 		(pts
@@ -532,16 +369,6 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 123.19) (xy 233.68 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8f6f0c01-8d07-45a4-b3c6-5c67ec4f55b7")
-	)
-	(wire
-		(pts
 			(xy 91.44 132.08) (xy 91.44 149.86)
 		)
 		(stroke
@@ -569,26 +396,6 @@
 			(type default)
 		)
 		(uuid "9aaa7443-d1dc-4400-86a7-b329fb5a31d6")
-	)
-	(wire
-		(pts
-			(xy 233.68 113.03) (xy 240.03 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9bd57f47-0ae2-4c0d-a978-043f840d5947")
-	)
-	(wire
-		(pts
-			(xy 240.03 143.51) (xy 233.68 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9f2ab707-98d0-47ab-adc2-69d05e8569fb")
 	)
 	(wire
 		(pts
@@ -652,16 +459,6 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 113.03) (xy 240.03 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b251122b-9f65-4cb2-8fc0-96013e7c2360")
-	)
-	(wire
-		(pts
 			(xy 177.8 133.35) (xy 193.04 133.35)
 		)
 		(stroke
@@ -669,16 +466,6 @@
 			(type default)
 		)
 		(uuid "b301366c-2a29-4da1-9f8b-88472cf0e4cd")
-	)
-	(wire
-		(pts
-			(xy 240.03 133.35) (xy 233.68 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b688589f-6ade-4527-ad56-b1cf5ffc1611")
 	)
 	(wire
 		(pts
@@ -719,16 +506,6 @@
 			(type default)
 		)
 		(uuid "bce8628a-e73b-4603-9982-8b68fafec153")
-	)
-	(wire
-		(pts
-			(xy 240.03 146.05) (xy 240.03 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "be272ffb-2c52-4ce5-9587-64917670f9a6")
 	)
 	(wire
 		(pts
@@ -4481,7 +4258,7 @@
 		(uuid "fd85e4d8-37f4-4dc3-ba74-3fe27ff89946")
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
+		(lib_id "Mechanical:MountingHole")
 		(at 231.14 133.35 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4491,22 +4268,24 @@
 		(fields_autoplaced yes)
 		(uuid "25411a69-8cd9-42d0-9d2b-f53671f2ca80")
 		(property "Reference" "H3"
-			(at 229.87 127 90)
+			(at 233.68 132.0799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 229.87 129.54 90)
+			(at 233.68 134.6199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_Pad_Via"
+		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_ISO14580"
 			(at 231.14 133.35 0)
 			(effects
 				(font
@@ -4524,7 +4303,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole with connection"
+		(property "Description" "Mounting Hole without connection"
 			(at 231.14 133.35 0)
 			(effects
 				(font
@@ -4533,11 +4312,8 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "c91bc573-128a-41a9-afbd-9caf3c68605e")
-		)
 		(instances
-			(project ""
+			(project "harucom-board"
 				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b"
 					(reference "H3")
 					(unit 1)
@@ -4546,7 +4322,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
+		(lib_id "Mechanical:MountingHole")
 		(at 231.14 123.19 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4556,22 +4332,24 @@
 		(fields_autoplaced yes)
 		(uuid "2fb13918-20bf-4eac-a4f0-f0b68b9efcf1")
 		(property "Reference" "H2"
-			(at 229.87 116.84 90)
+			(at 233.68 121.9199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 229.87 119.38 90)
+			(at 233.68 124.4599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_Pad_Via"
+		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_ISO14580"
 			(at 231.14 123.19 0)
 			(effects
 				(font
@@ -4589,7 +4367,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole with connection"
+		(property "Description" "Mounting Hole without connection"
 			(at 231.14 123.19 0)
 			(effects
 				(font
@@ -4598,11 +4376,8 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "cce1318c-feb3-4ffa-a119-60cdef30057e")
-		)
 		(instances
-			(project ""
+			(project "harucom-board"
 				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b"
 					(reference "H2")
 					(unit 1)
@@ -4611,7 +4386,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
+		(lib_id "Mechanical:MountingHole")
 		(at 231.14 113.03 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4621,22 +4396,24 @@
 		(fields_autoplaced yes)
 		(uuid "301c2254-75ff-415c-806a-ec2d74619b43")
 		(property "Reference" "H1"
-			(at 229.87 106.68 90)
+			(at 233.68 111.7599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 229.87 109.22 90)
+			(at 233.68 114.2999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_Pad_Via"
+		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_ISO14580"
 			(at 231.14 113.03 0)
 			(effects
 				(font
@@ -4654,7 +4431,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole with connection"
+		(property "Description" "Mounting Hole without connection"
 			(at 231.14 113.03 0)
 			(effects
 				(font
@@ -4663,11 +4440,8 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "fd578832-e89f-4eaa-bd8f-c643879af949")
-		)
 		(instances
-			(project ""
+			(project "harucom-board"
 				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b"
 					(reference "H1")
 					(unit 1)
@@ -4676,7 +4450,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
+		(lib_id "Mechanical:MountingHole")
 		(at 231.14 143.51 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4686,22 +4460,24 @@
 		(fields_autoplaced yes)
 		(uuid "9af86fb8-c2bb-42a0-8f68-55d974f3128c")
 		(property "Reference" "H4"
-			(at 229.87 137.16 90)
+			(at 233.68 142.2399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 229.87 139.7 90)
+			(at 233.68 144.7799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_Pad_Via"
+		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_ISO14580"
 			(at 231.14 143.51 0)
 			(effects
 				(font
@@ -4719,7 +4495,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole with connection"
+		(property "Description" "Mounting Hole without connection"
 			(at 231.14 143.51 0)
 			(effects
 				(font
@@ -4728,79 +4504,10 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "7b445a6a-984a-435e-b54c-2562d5c23a3e")
-		)
 		(instances
-			(project ""
+			(project "harucom-board"
 				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b"
 					(reference "H4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 240.03 146.05 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f8a1d699-e53a-4d84-93f7-81a8023cd10c")
-		(property "Reference" "#PWR01"
-			(at 240.03 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 240.03 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 240.03 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 240.03 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 240.03 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2bf685e2-f803-471f-b411-653adfa129d8")
-		)
-		(instances
-			(project ""
-				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b"
-					(reference "#PWR01")
 					(unit 1)
 				)
 			)

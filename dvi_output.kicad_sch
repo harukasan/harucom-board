@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Harucom-board")
-		(date "2026-03-23")
-		(rev "2B")
+		(date "2026-04-03")
+		(rev "3B")
 		(comment 1 "https://github.com/harukasan/harucom-board/")
 		(comment 2 "SPDX-License-Identifier: CERN-OHL-P-2.0")
 		(comment 3 "© 2026 Shunsuke Michii")
@@ -2171,7 +2171,7 @@
 			(uuid "a1c5f1a6-b2cf-4fb9-87ac-742f523b6254")
 		)
 		(instances
-			(project ""
+			(project "harucom-board"
 				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b/6dc8339e-6590-4b41-b33d-c0ae4a02af98"
 					(reference "C24")
 					(unit 1)
@@ -2249,7 +2249,7 @@
 			(uuid "c25ade78-af93-4692-8407-ae52a3cc8c4a")
 		)
 		(instances
-			(project "hakodate-board"
+			(project "harucom-board"
 				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b/6dc8339e-6590-4b41-b33d-c0ae4a02af98"
 					(reference "R22")
 					(unit 1)
@@ -2327,7 +2327,7 @@
 			(uuid "74079db4-f886-49f7-b615-b45621b26963")
 		)
 		(instances
-			(project "hakodate-board"
+			(project "harucom-board"
 				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b/6dc8339e-6590-4b41-b33d-c0ae4a02af98"
 					(reference "R24")
 					(unit 1)
@@ -2404,7 +2404,7 @@
 			(uuid "9dba6559-bcfe-460b-a753-615ee64f2de3")
 		)
 		(instances
-			(project "hakodate-board"
+			(project "harucom-board"
 				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b/6dc8339e-6590-4b41-b33d-c0ae4a02af98"
 					(reference "R27")
 					(unit 1)
@@ -2470,7 +2470,7 @@
 			(uuid "7c3b2c0c-8191-4a42-99e5-c74d79f268f4")
 		)
 		(instances
-			(project ""
+			(project "harucom-board"
 				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b/6dc8339e-6590-4b41-b33d-c0ae4a02af98"
 					(reference "#FLG06")
 					(unit 1)
@@ -2602,7 +2602,7 @@
 			(uuid "cdc8f3f7-fdec-41f3-bf75-d50683fdd853")
 		)
 		(instances
-			(project ""
+			(project "harucom-board"
 				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b/6dc8339e-6590-4b41-b33d-c0ae4a02af98"
 					(reference "#PWR044")
 					(unit 1)
@@ -2680,7 +2680,7 @@
 			(uuid "1636a43e-d84a-497f-b8b3-e3b16e73d0a6")
 		)
 		(instances
-			(project "hakodate-board"
+			(project "harucom-board"
 				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b/6dc8339e-6590-4b41-b33d-c0ae4a02af98"
 					(reference "R25")
 					(unit 1)
@@ -2758,7 +2758,7 @@
 			(uuid "57e15e36-fc05-4cb9-bfd7-a57da8ae6fba")
 		)
 		(instances
-			(project "hakodate-board"
+			(project "harucom-board"
 				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b/6dc8339e-6590-4b41-b33d-c0ae4a02af98"
 					(reference "R23")
 					(unit 1)
@@ -2891,7 +2891,7 @@
 			(uuid "266acb64-9ce3-421f-a9e5-78eb360ae5f8")
 		)
 		(instances
-			(project "hakodate-board"
+			(project "harucom-board"
 				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b/6dc8339e-6590-4b41-b33d-c0ae4a02af98"
 					(reference "J3")
 					(unit 1)
@@ -2969,7 +2969,7 @@
 			(uuid "38745b95-463e-44a6-b50e-ab44c784d314")
 		)
 		(instances
-			(project "hakodate-board"
+			(project "harucom-board"
 				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b/6dc8339e-6590-4b41-b33d-c0ae4a02af98"
 					(reference "R26")
 					(unit 1)
@@ -3035,7 +3035,7 @@
 			(uuid "6bec1da0-49d7-4fa6-be7f-7f8c5ec59f16")
 		)
 		(instances
-			(project "hakodate-board"
+			(project "harucom-board"
 				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b/6dc8339e-6590-4b41-b33d-c0ae4a02af98"
 					(reference "#PWR043")
 					(unit 1)
@@ -3113,7 +3113,7 @@
 			(uuid "3c792a57-39db-46ff-b9af-75d89ba40648")
 		)
 		(instances
-			(project "hakodate-board"
+			(project "harucom-board"
 				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b/6dc8339e-6590-4b41-b33d-c0ae4a02af98"
 					(reference "R21")
 					(unit 1)
@@ -3270,7 +3270,7 @@
 			(uuid "109963b2-ad9e-4deb-a6f6-8c779b4e9bbd")
 		)
 		(instances
-			(project "hakodate-board"
+			(project "harucom-board"
 				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b/6dc8339e-6590-4b41-b33d-c0ae4a02af98"
 					(reference "R19")
 					(unit 1)
@@ -3347,7 +3347,7 @@
 			(uuid "b48220b9-6fee-43f6-8886-c10b6842bab8")
 		)
 		(instances
-			(project ""
+			(project "harucom-board"
 				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b/6dc8339e-6590-4b41-b33d-c0ae4a02af98"
 					(reference "D6")
 					(unit 1)
@@ -3491,7 +3491,7 @@
 			(uuid "185e360b-0dde-46b6-bf86-5795f9fe1ebd")
 		)
 		(instances
-			(project "hakodate-board"
+			(project "harucom-board"
 				(path "/0cb5192e-ac62-478f-bacb-beb1b9be1a5b/6dc8339e-6590-4b41-b33d-c0ae4a02af98"
 					(reference "R20")
 					(unit 1)
